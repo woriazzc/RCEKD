@@ -1,6 +1,6 @@
 # Understanding and Unleashing the Potential of Cross-Entropy Loss in Knowledge Distillation for Recommender Systems
 
-This repo provide the Pytorch for TSCKD.
+This repo provide the Pytorch codes for TSCKD.
 
 ### Requirements
 
