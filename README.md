@@ -34,7 +34,7 @@ We provide some exemplar command lines in run.sh.
 
 ### Notes
 
-In configs/, we have provided the configuration of hyperparameters for TSCKD, together hyperparameters for other compared methods.
+In configs/, we have provided the configuration of hyperparameters for TSCKD, together with hyperparameters for other compared methods.
 
 In modeling/KD/baseline.py, we provide the codes for all baseline methods.
 
