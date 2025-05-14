@@ -13,10 +13,10 @@ from .utils import Projector, pca, load_pkls, dump_pkls, self_loop_graph, CKA, i
 from .base_model import BaseKD4Rec, BaseKD4CTR
 
 
-class TSCKD(BaseKD4Rec):
+class RCEKD(BaseKD4Rec):
     def __init__(self, args, teacher, student):
         super().__init__(args, teacher, student)
-        self.model_name = "tsckd"
+        self.model_name = "rcekd"
         self.tau = args.mkd_tau
         self.K = args.mkd_K
         self.beta = args.mkd_beta

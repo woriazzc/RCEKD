@@ -1,6 +1,6 @@
-# Understanding and Unleashing the Potential of Cross-Entropy Loss in Knowledge Distillation for Recommender Systems
+# Rejuvenating Cross-Entropy Loss in Knowledge Distillation for Recommender Systems
 
-This repo provides the Pytorch codes for TSCKD.
+This repo provides the Pytorch codes for RCE-KD.
 
 ### Requirements
 
@@ -25,7 +25,7 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 2. Now, you can start knowledge distillation. For example,
 
    ```shell
-   python -u main.py --dataset=citeulike --S_backbone=bpr --T_backbone=bpr --model=tsckd
+   python -u main.py --dataset=citeulike --S_backbone=bpr --T_backbone=bpr --model=rcekd
    ```
 
    By configuring the "model", you can test other KD methods, such as rrd.
@@ -34,10 +34,10 @@ We provide some exemplar command lines in run.sh.
 
 ### Notes
 
-In configs/, we have provided the configuration of hyperparameters for TSCKD, together with hyperparameters for other compared methods.
+In configs/, we have provided the configuration of hyperparameters for RCE-KD, together with hyperparameters for other compared methods.
 
 In modeling/KD/baseline.py, we provide the codes for all baseline methods.
 
-The code for TSCKD is given in modeling/KD/playground.py.
+The code for RCE-KD is given in modeling/KD/playground.py.
 
 The codes for all backbones are provided in modeling/backbone/.
