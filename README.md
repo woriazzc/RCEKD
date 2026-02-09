@@ -18,12 +18,11 @@ This paper analyzes Cross-Entropy (CE) loss in knowledge distillation (KD) for r
 
 ## ⚙️ Requirement
 
-1. Create the conda environment with `Python==3.9`.
+1. Create the conda environment with `Python==3.9.21`.
 2. Install pytorch using the following code:
 
    ```shell
-   conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
-
+   pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu124
    ```
 3. Install other packages using `requirements.py`:
 
@@ -43,7 +42,6 @@ Note that, for CiteULike dataset, preprocessing is required. Please follow the c
 cd data/citeulike
 python preprocess_citeulike.py
 cd ../..
-
 ```
 
 For other datasets, no further preprocessing is required.
